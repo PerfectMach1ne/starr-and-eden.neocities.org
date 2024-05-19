@@ -86,6 +86,7 @@ SelectorClassAdders.saveMarginsPaddings("dl");
 SelectorClassAdders.saveMarginsPaddings("dt");
 SelectorClassAdders.saveMarginsPaddings("dd");
 
-document.getElementById("kbity").src=KbityRandomizer.kbityRandomizer();
+document.getElementById("kbity-left").src=KbityRandomizer.kbityRandomizer();
+document.getElementById("kbity-right").src=KbityRandomizer.kbityRandomizer();
 
 // Shoutout to Vim motions girls (myself including)

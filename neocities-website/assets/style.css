@@ -18,7 +18,7 @@ body {
   color: white;
 
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #page-container-and-content-wrap {
@@ -93,7 +93,8 @@ h6 {
   margin-right: auto;
 }
 
-#kbity {
+#kbity-left,
+#kbity-right {
   max-width: 225px;
   max-height: 225px;
 }
@@ -110,7 +111,6 @@ h6 {
 }
 
 div.nav-main-aside-container > nav {
-  display: flex;
   flex: 30%;
   flex-flow: column wrap;
   justify-content: center;
@@ -132,9 +132,25 @@ div.nav-main-aside-container > main {
 div.nav-main-aside-container > aside {
   flex: 30%;
   
-  border: 10px solid #EF8203;
+  border: 10px solid #236e3a;
   background-color: #01002F;
   padding: 20px;
+}
+
+main > hr.hr-main {
+  border: none;
+  border-top: 5px dashed #7C55BA;
+  height: 10px;
+  margin-top: 15px;
+}
+
+main > h3.silly-terminal {
+  background-color: black;
+  color: yellowgreen;
+}
+
+main > ul {
+  list-style: url(images/silly-list-item.png);
 }
 
 /*************** FOOTER ZONE BELOW ***************/
