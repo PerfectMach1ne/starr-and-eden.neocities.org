@@ -17,7 +17,7 @@ body {
   background: no-repeat url("./images/bgimg.png");
   color: white;
 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', Courier, monospace;
   font-size: 1.3rem;
 }
 
@@ -147,6 +147,7 @@ main > hr.hr-main {
 main > h3.silly-terminal {
   background-color: black;
   color: yellowgreen;
+  text-align: left;
 }
 
 main > ul {
