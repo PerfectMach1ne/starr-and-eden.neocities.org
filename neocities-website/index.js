@@ -1,17 +1,25 @@
-/*
- * NeoReactCities.js, world's #best JavaScript (script for being interpreted by JVM) "framework"!
- *
- * Copyleft StarRflowerR -i2024
-*/
-
-var this_variable_is_soooooooooo_important_slash_j = undefined;
 
 // I put methods I plan to use for this website into static classes
 // to make code cleaner and the whole thing easier to comprehend as
 // what it is doing at any given time.
-class ContentAdders {
-  static footer = document.getElementById("footer-paster");
-  static #footerPasteContent = `
+let contentAdderInstance;
+
+class ContentAddersSingleton {
+  constructor() {
+    if (contentAdderInstance) {
+      throw new Error("Programmer attempted to create a second singleton ...why?");
+    }
+
+    contentAdderInstance = this;
+  }
+
+  getInstance() {
+    return this;
+  }
+
+  footerPaster() {
+    var footer = document.getElementById("footer-paster");
+    footer.innerHTML = `
         <div class="cooler-footer">
           <footer class="footer-display">
             <img 
@@ -27,11 +35,9 @@ class ContentAdders {
         <div class="post-footer">
           <p>#.EOF_</p>
         </div>
-`;
-
-  static footerPaster() {
-    this.footer.innerHTML = this.#footerPasteContent;
+`; 
   }
+
 }
 
 class SelectorClassAdders {
@@ -78,7 +84,9 @@ class KbityRandomizer {
 }
 
 // All the ordinary utility function calls are below.
-ContentAdders.footerPaster();
+// ContentAdders.footerPaster();
+contentAdderInstance = new ContentAddersSingleton();
+contentAdderInstance.getInstance().footerPaster();
 
 SelectorClassAdders.saveMarginsPaddings("ol");
 SelectorClassAdders.saveMarginsPaddings("ul");
