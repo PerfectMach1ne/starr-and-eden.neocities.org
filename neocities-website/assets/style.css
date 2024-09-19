@@ -154,6 +154,95 @@ main > ul {
   list-style: url(images/silly-list-item.png);
 }
 
+div.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.button-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div.button-container > button {
+  border: none;
+  padding: 10px;
+
+  background-color: black;
+  color: lightsteelblue;
+  font-family: monospace;
+  font-size: 1.2rem;
+
+  /* transition: 0.25s; */
+  /* animation: glitchy 1s steps(20, end) infinite; */
+}
+
+.active {
+  background-color: navy;
+  color: gray;
+}
+
+@keyframes click {
+  0% {
+    background-color: navy;
+    color: gray;
+  }
+  50% {
+    background-color: lightseagreen;
+    color: whitesmoke;
+  }
+}
+
+div.button-container > button:hover {
+  animation: glitchy 1s steps(20, end) infinite;
+}
+
+@keyframes glitchy {
+  0% { 
+    background-color: #184E4E;
+    color: #236e3a;
+   }
+   5%,10%,15%,20%,25%,30%,35%,
+   40% {
+    background-color: #184E4E;
+    color: lightsteelblue;
+   }
+   45%,
+   50% {
+    background-color: black;
+   }
+   65%,
+   60% {
+    background-color: #184E4E;
+   }
+   65% {
+    background-color: #236e3a;
+   }
+   70% {
+    background-color: #184E4E;
+    color: whitesmoke;
+   }
+   80%,
+   85% {
+    color: greenyellow;
+   }
+   80%,
+   95% {
+    background-color: #184E4E;
+   }
+}
+
+div.button-container > button#cv {}
+
+div.button-container > button#conputer {}
+
+div.button-container > button#nw4 {}
+
+div.button-container > button#omega-psi {}
+
+div.button-container > button#co-re {}
+
 /*************** FOOTER ZONE BELOW ***************/
 
 div#footer-paster {

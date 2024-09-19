@@ -4,6 +4,7 @@
 // what it is doing at any given time.
 let contentAdderInstance;
 
+// This is so pointless but okay girl. have fun i guess.
 class ContentAddersSingleton {
   constructor() {
     if (contentAdderInstance) {
@@ -37,7 +38,6 @@ class ContentAddersSingleton {
         </div>
 `; 
   }
-
 }
 
 class SelectorClassAdders {
@@ -96,5 +96,16 @@ SelectorClassAdders.saveMarginsPaddings("dd");
 
 document.getElementById("kbity-left").src=KbityRandomizer.kbityRandomizer();
 document.getElementById("kbity-right").src=KbityRandomizer.kbityRandomizer();
+
+const button_ids = ["cv-puter", "blog-puter", "nw4", "omega-psi", "co-re"]
+let buttons = Array();
+button_ids.forEach((id_str) => {
+  buttons.push(document.getElementById(id_str));
+});
+buttons.forEach((butt) => {
+  butt.addEventListener("click", (e) => {
+    window.location = window.origin + "/" + butt.id + ".html";
+  })
+})
 
 // Shoutout to Vim motions girls (myself including)
