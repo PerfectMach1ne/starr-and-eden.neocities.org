@@ -104,7 +104,7 @@ button_ids.forEach((id_str) => {
 });
 buttons.forEach((butt) => {
   butt.addEventListener("click", (e) => {
-    window.location = window.origin + "/" + butt.id + ".html";
+    window.location = window.origin + "/views-pages/" + butt.id + ".html";
   })
 })
 
