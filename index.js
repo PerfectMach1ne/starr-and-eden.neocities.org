@@ -1,7 +1,10 @@
+import CVDefault from "/scripts/cv.js";
+
 /*
  * DECLARATIONS
  */
 let contentAdderInstance;
+const button_ids = ["cv-puter", "blog-puter", "nw4", "omega-psi", "co-re"]
 const kbityArray = [
   "assets/images/KBITY_TRANSEDEN_TEAL_HEHE_.png",
   "assets/images/kbity-antinihility-black.png",
@@ -95,18 +98,29 @@ SelectorClassAdders.saveMarginsPaddings("dl");
 SelectorClassAdders.saveMarginsPaddings("dt");
 SelectorClassAdders.saveMarginsPaddings("dd");
 
-document.getElementById("kbity-left").src = kbityRandomizer();
-document.getElementById("kbity-right").src = kbityRandomizer();
+switch (window.location.pathname) {
+case "/":
+  let kbity_l = document.getElementById("kbity-left"); 
+  let kbity_r = document.getElementById("kbity-right"); 
 
-const button_ids = ["cv-puter", "blog-puter", "nw4", "omega-psi", "co-re"]
-let buttons = Array();
-button_ids.forEach((id_str) => {
-  buttons.push(document.getElementById(id_str));
-});
-buttons.forEach((butt) => {
-  butt.addEventListener("click", () => {
-    window.location = window.origin + "/views-pages/" + butt.id + ".html";
+  kbity_l.src = kbityRandomizer();
+  kbity_r.src = kbityRandomizer();
+  kbity_l.addEventListener("click", () => { kbity_l.src = kbityRandomizer(); });
+  kbity_r.addEventListener("click", () => { kbity_r.src = kbityRandomizer(); });
+
+  let buttons = Array();
+  button_ids.forEach((id_str) => {
+    buttons.push(document.getElementById(id_str));
+  });
+  buttons.forEach((butt) => {
+    butt.addEventListener("click", () => {
+      window.location = window.origin + "/views-pages/" + butt.id + ".html";
+    })
   })
-})
+  break;
+case "/views-pages/cv-puter.html":
+  let CV = new CVDefault();
+  console.log(CV.test);
+}
 
 // Shoutout to Vim motions girls (myself including)

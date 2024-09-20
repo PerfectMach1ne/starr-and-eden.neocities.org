@@ -7,13 +7,16 @@
   padding: 0;
 }
 
+html { /* Stupidest style fix ever */
+  background-color: #07190E;
+}
+
 body {
   display: flex;
   flex-direction: column;
 
   padding: 1em;
 
-  background-color: #07190E;
   background: no-repeat url("./images/bgimg.png");
   color: white;
 
@@ -171,7 +174,7 @@ aside hr.hr-aside {
   margin-top: 15px;
 }
 
-main > h3.silly-terminal {
+h3.silly-terminal {
   background-color: black;
   color: yellowgreen;
   text-align: left;
