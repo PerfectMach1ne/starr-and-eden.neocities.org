@@ -115,6 +115,7 @@ case "/":
   buttons.forEach((butt) => {
     butt.addEventListener("click", () => {
       window.location = window.origin + "/views-pages/" + butt.id + ".html";
+      console.log(window.origin + "/views-pages/" + butt.id + ".html")
     })
   })
   break;
