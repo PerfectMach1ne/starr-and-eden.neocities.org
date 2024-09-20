@@ -107,6 +107,11 @@ h6 {
   max-height: 225px;
 }
 
+.kofi > a > img {
+  max-width: 225px;
+  max-height: 225px;
+}
+
 .nav-main-aside-container {
   display: flex;
   flex-flow: row nowrap;
@@ -145,9 +150,23 @@ div.nav-main-aside-container > aside {
   padding: 20px;
 }
 
+nav hr.hr-nav {
+  border: none;
+  border-top: 5px dashed #236e3a;
+  height: 10px;
+  margin-top: 15px;
+}
+
 main > hr.hr-main {
   border: none;
   border-top: 5px dashed #7C55BA;
+  height: 10px;
+  margin-top: 15px;
+}
+
+aside hr.hr-aside {
+  border: none;
+  border-top: 5px dashed #3797E0;
   height: 10px;
   margin-top: 15px;
 }
@@ -181,9 +200,6 @@ div.button-container > button {
   color: lightsteelblue;
   font-family: monospace;
   font-size: 1.2rem;
-
-  /* transition: 0.25s; */
-  /* animation: glitchy 1s steps(20, end) infinite; */
 }
 
 div.button-container > button:hover {
@@ -194,35 +210,35 @@ div.button-container > button:hover {
   0% { 
     background-color: #184E4E;
     color: #236e3a;
-   }
-   5%,10%,15%,20%,25%,30%,35%,
-   40% {
+  }
+  5%,10%,15%,20%,25%,30%,35%,
+  40% {
     background-color: #184E4E;
     color: lightsteelblue;
-   }
-   45%,
-   50% {
+  }
+  45%,
+  50% {
     background-color: black;
-   }
-   65%,
-   60% {
+  }
+  65%,
+  60% {
     background-color: #184E4E;
-   }
-   65% {
+  }
+  65% {
     background-color: #236e3a;
-   }
-   70% {
+  }
+  70% {
     background-color: #184E4E;
     color: whitesmoke;
-   }
-   80%,
-   85% {
+  }
+  80%,
+  85% {
     color: greenyellow;
-   }
-   80%,
-   95% {
+  }
+  80%,
+  95% {
     background-color: #184E4E;
-   }
+  }
 }
 
 /*************** FOOTER ZONE BELOW ***************/
