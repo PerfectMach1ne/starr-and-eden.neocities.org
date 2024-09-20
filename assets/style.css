@@ -21,6 +21,14 @@ body {
   font-size: 1.3rem;
 }
 
+body a:visited {
+  color: aqua;
+}
+
+body a:hover {
+  color: aliceblue;
+}
+
 #page-container-and-content-wrap {
   position: relative;
   min-height: 100vmin;
@@ -116,7 +124,7 @@ div.nav-main-aside-container > nav {
   justify-content: center;
   /* align-content: stretch; */
 
-  border: 10px solid #3797E0;
+  border: 10px solid #236e3a;
   background-color: #01002F;
   padding: 20px;
 }
@@ -132,7 +140,7 @@ div.nav-main-aside-container > main {
 div.nav-main-aside-container > aside {
   flex: 30%;
   
-  border: 10px solid #236e3a;
+  border: 10px solid #3797E0;
   background-color: #01002F;
   padding: 20px;
 }
@@ -178,22 +186,6 @@ div.button-container > button {
   /* animation: glitchy 1s steps(20, end) infinite; */
 }
 
-.active {
-  background-color: navy;
-  color: gray;
-}
-
-@keyframes click {
-  0% {
-    background-color: navy;
-    color: gray;
-  }
-  50% {
-    background-color: lightseagreen;
-    color: whitesmoke;
-  }
-}
-
 div.button-container > button:hover {
   animation: glitchy 1s steps(20, end) infinite;
 }
@@ -232,16 +224,6 @@ div.button-container > button:hover {
     background-color: #184E4E;
    }
 }
-
-div.button-container > button#cv {}
-
-div.button-container > button#conputer {}
-
-div.button-container > button#nw4 {}
-
-div.button-container > button#omega-psi {}
-
-div.button-container > button#co-re {}
 
 /*************** FOOTER ZONE BELOW ***************/
 
