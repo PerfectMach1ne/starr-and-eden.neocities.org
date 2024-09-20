@@ -187,11 +187,6 @@ main > ul {
 div.button-container {
   display: flex;
   justify-content: space-around;
-}
-
-div.button-container {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -203,6 +198,12 @@ div.button-container > button {
   color: lightsteelblue;
   font-family: monospace;
   font-size: 1.2rem;
+}
+
+nav div.button-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 div.button-container > button:hover {
